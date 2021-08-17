@@ -1,0 +1,12 @@
+# js思维导图
+![blockchain](./image/js/dom.png "dom")  
+![blockchain](./image/js/windows.png "windows")  
+![blockchain](./image/js/var.png "var")  
+![blockchain](./image/js/base.png "base")  
+![blockchain](./image/js/ifelse.png "ifelse")  
+![blockchain](./image/js/data.png "data")  
+![blockchain](./image/js/array.png "array")  
+![blockchain](./image/js/calc.png "calc")  
+![blockchain](./image/js/reg.png "reg")  
+![blockchain](./image/js/string.png "string")  
+![blockchain](./image/js/stringarray.png "stringarray")  

@@ -1,0 +1,16 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "description": "我的博客",
+  "main": "index.js",
+  "author": "chen",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.23"
+  }
+}
