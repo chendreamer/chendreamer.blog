@@ -1,11 +1,14 @@
 # JS函数大全
+
 <a href="http://jquery.cuishifeng.cn/" target="_blank">jquery api</a>  
-原型链  
+
+## 原型链  
 + 当谈到继承时，JavaScript 只有一种结构：对象。每个实例对象（ object ）都有一个私有属性（称之为 __proto__ ）指向它的构造函数的原型对象（prototype ）。该原型对象也有一个自己的原型对象( __proto__ ) ，层层向上直到一个对象的原型对象为 null。根据定义，null 没有原型，并作为这个原型链中的最后一个环节。
 + __proto__ 是原型链查询中实际用到的，它总是指向 prototype
 + prototype 是函数所独有的，在定义构造函数时自动创建，它总是被 __proto__ 所指。
 + 所有对象都有__proto__属性，函数这个特殊对象除了具有__proto__属性，还有特有的原型属性prototype。prototype对象默认有两个属性，constructor属性和__proto__属性。prototype属性可以给函数和对象添加可共享（继承）的方法、属性，而__proto__是查找某函数或对象的原型链方式。constructor，这个属性包含了一个指针，指回原构造函数。
-  
+
+## 原生js函数和jquery函数  
 ```js
 array创建数组
 concat()连接两个或更多的数组，并返回结果。
@@ -475,3 +478,10 @@ $.post({})
 $.load("www.sohu.com/index.html form login>input")\
 load将网站的所有的from里面所有的login的input加载到本页面
 ```
+
+## 引用他人  
+### 数组中的16种常用方法  
+![blockchain](./image/js_detail/数组中的16种常用方法.png "数组中的16种常用方法")   
+
+### 字符串中的12种常用方法  
+![blockchain](./image/js_detail/字符串中的12种常用方法.png "字符串中的12种常用方法")   
