@@ -1,6 +1,7 @@
 module.exports = {
 	title: "chen's blog",
 	base: "/",
+	port: "9888",
 	description: 'chendreamer的博客',
 	head: [
 		['link', { rel: 'icon', href: 'image/logo.png' }]
@@ -35,7 +36,9 @@ module.exports = {
 							'/web/JS思维导图.md',
 							'/web/JS函数大全.md',
 							'/web/算法.md',
+							'/web/iconfont.md',
 							'/web/WEB安全.md',
+							
 						]
 					},
 					{
@@ -78,6 +81,7 @@ module.exports = {
 								'/web/JS思维导图.md',
 								'/web/JS函数大全.md',
 								'/web/算法.md',
+								'/web/iconfont.md',
 								'/web/WEB安全.md',
 							]
 						}
