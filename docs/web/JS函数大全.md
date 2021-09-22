@@ -483,6 +483,9 @@ load将网站的所有的from里面所有的login的input加载到本页面
 ### 数组中的16种常用方法  
 ![blockchain](./image/js_detail/数组中的16种常用方法.png "数组中的16种常用方法")   
 
+### 数组中的常用方法  
+![blockchain](./image/js_detail/数组中的常用方法.png "数组中的常用方法")   
+
 ### 字符串中的12种常用方法  
 ![blockchain](./image/js_detail/字符串中的12种常用方法.png "字符串中的12种常用方法")   
 

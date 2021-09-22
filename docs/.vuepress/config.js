@@ -53,13 +53,16 @@ module.exports = {
 						]
 					},
 					{
+						text: '面试题',
+						link: '/interview/',
+						children: [
+							'/interview/js类.md'
+						]
+					},
+					{
 						text: 'GitHub',
 						link: 'https://github.com/chendreamer'
 					},
-					{
-						text: '百度',
-						link: 'https://baidu.com'
-					}
 				],
 				sidebar: {
 					'/web/': [
@@ -95,6 +98,14 @@ module.exports = {
 								'/server/node.md',
 								'/server/sql语句.md',
 								'/server/mongoDB.md'
+							]
+						}
+					],
+					'/interview/': [
+						{
+							text: '面试题',
+							children: [
+								'/interview/js类.md'
 							]
 						}
 					]
