@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
 	title: "chen's blog",
 	base: "/",
@@ -7,9 +9,14 @@ module.exports = {
 		['link', { rel: 'icon', href: 'image/logo.png' }]
 	],
 
+	markdown: {
+		importCode: {
+		  handleImportPath: (str) =>
+			str.replace(/^@src/, path.resolve(__dirname, '../code/'))
+		},
+	  },
 
 	themeConfig: {
-
 		locales: {
 			sidebarDepth: 2,// e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
 			lastUpdated: true,
@@ -38,7 +45,7 @@ module.exports = {
 							'/web/算法.md',
 							'/web/iconfont.md',
 							'/web/WEB安全.md',
-							
+
 						]
 					},
 					{

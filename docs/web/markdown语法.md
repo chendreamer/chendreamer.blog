@@ -8,6 +8,9 @@
 :::warning
 普通文字换行是在后面加两个空格。
 :::
+:::danger
+这是一条危险警告
+:::
 ```md
 # 一级标题
 ## 二级标题
@@ -68,15 +71,10 @@
 
 ## 表格
 ```md
-表头|表头|表头
--|:-:|-:
-内容|内容|内容
-内容|内容|内容
-
-第二行分割表头和内容。
-文字默认居左
-两边加：表示文字居中
-右边加：表示文字居右
+|表头|表头|表头|
+|-   |:-: |-: |    //表头分割线。文字默认居左两边加,表示文字居中右边加,表示文字居右
+|内容|内容|内容|
+|内容|内容|内容|
 ```
 ## 代码
 + 单行代码  
@@ -86,13 +84,29 @@
 ```md
 `代码内容`
 
-(```)js/md/sh/html/css/sql/...
+\```js/md/sh/html/css/sql/...
   代码...
   代码...
   代码...
-(```)
-此处没有小括号。
+\```
+
+//直接导入代码文件
+@[code](@src/xx.js)
 ```
+@[code](@src/demo.js)
+在 Prism 的网站上查看 <a href="https://prismjs.com/#languages-list" target="_blank">合法的语言列表</a>  
+
+## 内置组件
+```
++ VuePress - <Badge type="tip" text="v2" vertical="top" />
++ VuePress - <Badge type="warning" text="v2" vertical="middle" />
++ VuePress - <Badge type="danger" text="v2" vertical="bottom" />
+```
++ VuePress - <Badge type="tip" text="v2" vertical="top" />
++ VuePress - <Badge type="warning" text="v2" vertical="middle" />
++ VuePress - <Badge type="danger" text="v2" vertical="bottom" />
+
+
 ## 图片
 支持网络地址，相对地址，base64。  
   
@@ -100,6 +114,7 @@
 `![blockchain](./image/1.png "qukuailian")`
 ## 超链接
 <a href="https://www.baidu.com" target="_blank">百度搜索</a>  
-`<a href="https://www.baidu.com" target="_blank">百度搜索</a>`
+`<a href="https://www.baidu.com" target="_blank">百度搜索</a>`  
 
-
+<a href="../server/node.md" target="_blank">文档内链接</a>  
+`<a href="../server/xx.md" target="_blank">node</a>`  
