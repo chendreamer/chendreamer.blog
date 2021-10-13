@@ -17,3 +17,5 @@
 
 ## JS中的变量提升机制
 ![blockchain](./image/js/JS中的变量提升机制.png "JS中的变量提升机制")   
+
+## <a href="../web/js/事件和事件绑定.md" target="_blank">事件和事件绑定</a>  

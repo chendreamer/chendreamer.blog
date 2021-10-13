@@ -19,6 +19,19 @@
 ##### 五级标题
 ###### 六级标题
 ```
+## 超链接
+<a href="https://www.baidu.com" target="_blank">百度搜索</a>  
+`<a href="https://www.baidu.com" target="_blank">百度搜索</a>`  
+
+<a href="../server/node.md" target="_blank">文档内链接</a>  
+`<a href="../server/xx.md" target="_blank">node</a>`  
+
+## 图片
+支持网络地址，相对地址，base64。  
+  
+![blockchain](./image/1.png "qukuailian")
+`![blockchain](./image/1.png "qukuailian")`  
+
 ## 字体
 + 加粗  
 要加粗的文字左右分别用两个*号包起来
@@ -107,14 +120,3 @@
 + VuePress - <Badge type="danger" text="v2" vertical="bottom" />
 
 
-## 图片
-支持网络地址，相对地址，base64。  
-  
-![blockchain](./image/1.png "qukuailian")
-`![blockchain](./image/1.png "qukuailian")`
-## 超链接
-<a href="https://www.baidu.com" target="_blank">百度搜索</a>  
-`<a href="https://www.baidu.com" target="_blank">百度搜索</a>`  
-
-<a href="../server/node.md" target="_blank">文档内链接</a>  
-`<a href="../server/xx.md" target="_blank">node</a>`  
