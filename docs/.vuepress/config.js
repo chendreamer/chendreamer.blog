@@ -1,5 +1,42 @@
 const path = require("path");
 
+//前端目录结构
+const webArray = [
+	'/web/首页.md',
+	'/web/知识点.md',
+	'/web/HTML.md',
+	'/web/CSS.md',
+	'/web/vue.md',
+	'/web/ES6.md',
+	'/web/webpack.md',
+	'/web/typescript.md',
+	'/web/Mockjs.md',
+	'/web/flex&grid.md',
+	'/web/markdown语法.md',
+	'/web/git使用手册.md',
+	'/web/JS思维导图.md',
+	'/web/JS函数大全.md',
+	'/web/算法.md',
+	'/web/iconfont.md',
+	'/web/WEB安全.md',
+]
+
+//后端目录结构
+const serverArray = [
+	'/server/首页.md',
+	'/server/知识点.md',
+	'/server/node.md',
+	'/server/sql语句.md',
+	'/server/mongoDB.md'
+]
+
+//面试目录结构
+const interviewArray = [
+	'/interview/js类.md',
+	'/interview/面试点总结-1.md',
+	'/interview/面试点总结-2.md'
+]
+
 module.exports = {
 	title: "chen's blog",
 	base: "/",
@@ -11,10 +48,10 @@ module.exports = {
 
 	markdown: {
 		importCode: {
-		  handleImportPath: (str) =>
-			str.replace(/^@src/, path.resolve(__dirname, '../code/'))
+			handleImportPath: (str) =>
+				str.replace(/^@src/, path.resolve(__dirname, '../code/'))
 		},
-	  },
+	},
 
 	themeConfig: {
 		locales: {
@@ -27,44 +64,17 @@ module.exports = {
 					{
 						text: '前端',
 						link: '/web/',
-						children: [
-							'/web/首页.md',
-							'/web/知识点.md',
-							'/web/HTML.md',
-							'/web/CSS.md',
-							'/web/vue.md',
-							'/web/ES6.md',
-							'/web/webpack.md',
-							'/web/typescript.md',
-							'/web/Mockjs.md',
-							'/web/flex&grid.md',
-							'/web/markdown语法.md',
-							'/web/git使用手册.md',
-							'/web/JS思维导图.md',
-							'/web/JS函数大全.md',
-							'/web/算法.md',
-							'/web/iconfont.md',
-							'/web/WEB安全.md',
-
-						]
+						children: webArray
 					},
 					{
 						text: '后端',
 						link: '/server/',
-						children: [
-							'/server/首页.md',
-							'/server/知识点.md',
-							'/server/node.md',
-							'/server/sql语句.md',
-							'/server/mongoDB.md'
-						]
+						children: serverArray
 					},
 					{
 						text: '面试题',
 						link: '/interview/',
-						children: [
-							'/interview/js类.md'
-						]
+						children: interviewArray
 					},
 					{
 						text: 'GitHub',
@@ -75,45 +85,19 @@ module.exports = {
 					'/web/': [
 						{
 							text: '前端',
-							children: [
-								'/web/首页.md',
-								'/web/知识点.md',
-								'/web/HTML.md',
-								'/web/CSS.md',
-								'/web/vue.md',
-								'/web/ES6.md',
-								'/web/webpack.md',
-								'/web/typescript.md',
-								'/web/Mockjs.md',
-								'/web/flex&grid.md',
-								'/web/markdown语法.md',
-								'/web/git使用手册.md',
-								'/web/JS思维导图.md',
-								'/web/JS函数大全.md',
-								'/web/算法.md',
-								'/web/iconfont.md',
-								'/web/WEB安全.md',
-							]
+							children: webArray
 						}
 					],
 					'/server/': [
 						{
 							text: '后端',
-							children: [
-								'/server/首页.md',
-								'/server/知识点.md',
-								'/server/node.md',
-								'/server/sql语句.md',
-								'/server/mongoDB.md'
-							]
+							children: serverArray
 						}
 					],
 					'/interview/': [
 						{
 							text: '面试题',
-							children: [
-								'/interview/js类.md'
-							]
+							children: interviewArray
 						}
 					]
 				}
