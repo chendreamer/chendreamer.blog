@@ -32,6 +32,8 @@ const serverArray = [
 
 //面试目录结构
 const interviewArray = [
+	'/interview/优秀博主.md',
+	'/interview/精品文章.md',
 	'/interview/js类.md',
 	'/interview/面试点总结-1.md',
 	'/interview/面试点总结-2.md'
