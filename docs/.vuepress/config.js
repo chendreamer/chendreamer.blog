@@ -17,6 +17,7 @@ const webArray = [
 	'/web/JS思维导图.md',
 	'/web/JS函数大全.md',
 	'/web/算法.md',
+	'/web/前端性能优化.md',
 	'/web/iconfont.md',
 	'/web/WEB安全.md',
 ]
@@ -34,6 +35,7 @@ const serverArray = [
 const interviewArray = [
 	'/interview/优秀博主.md',
 	'/interview/精品文章.md',
+	'/interview/vue思维导图.md',
 	'/interview/js类.md',
 	'/interview/面试点总结-1.md',
 	'/interview/面试点总结-2.md'
