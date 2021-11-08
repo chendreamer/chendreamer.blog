@@ -40,3 +40,37 @@ yarn add sass
   Content-Encoding: gzip
   ```
 + 按需加载
+
+## flow
+   <a href="https://flow.org/en/docs/types/" target="_blank">Flow 官方文档</a>  
+   Flow 是 facebook 出品的 JavaScript 静态类型检查工具。Vue.js 的源码利用了 Flow 做了静态类型检查，所以了解 Flow 有助于我们阅读源码。  
+   ```js
+   /*@flow*/
+
+  class Bar {
+    x: string;           // x 是字符串
+    y: string | number;  // y 可以是字符串或者数字
+    z: boolean;
+
+    constructor(x: string, y: string | number) {
+      this.x = x
+      this.y = y
+      this.z = false
+    }
+  }
+
+  var bar: Bar = new Bar('hello', 4)
+
+  var obj: { a: string, b: number, c: Array<string>, d: Bar } = {
+    a: 'hello',
+    b: 11,
+    c: ['hello', 'world'],
+    d: new Bar('hello', 3)
+  }
+
+  //若想任意类型 T 可以为 null 或者 undefined，只需类似如下写成 ?T 的格式即可。
+  var foo: ?string = null
+
+//若想任意类型 T 可以为undefined,不可为null，只需类似如下写成 ?: T 的格式即可。
+  var foo?: string = undefined
+   ```
