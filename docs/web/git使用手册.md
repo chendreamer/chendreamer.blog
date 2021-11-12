@@ -18,6 +18,7 @@
 + 克隆远程仓库`git clone 远程仓库的地址`
 + 添加远程仓库地址(origin 是远程仓库的代名词)`git remote add origin 地址`
 + 查看日志`git log`
++ 查看每次提交的文件列表`git log --stat`
 + 查看某次提交的修改内容`git show hash`
 + git pull之后查看代码更新内容 `git diff HEAD^`
 + 显示工作目录与git仓库之间的差异`git diff HEAD`
