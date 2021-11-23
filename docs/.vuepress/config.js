@@ -37,6 +37,7 @@ const interviewArray = [
 	'/interview/精品文章.md',
 	'/interview/vue思维导图.md',
 	'/interview/Vue源码学习笔记.md',
+	'/interview/vue双向绑定的简单实现.md',
 	'/interview/js类.md',
 	'/interview/面试点总结-1.md',
 	'/interview/面试点总结-2.md'
