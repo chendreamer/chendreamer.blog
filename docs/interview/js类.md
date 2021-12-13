@@ -42,3 +42,26 @@ AMD依赖前置，js可以方便知道依赖模块是谁，立即加载；而CMD
 UMD是AMD和CommonJS的糅合。AMD模块以浏览器第一的原则发展，异步加载模块。CommonJS模块以服务器第一原则发展，选择同步加载，它的模块无需包装(unwrapped modules)。这迫使人们又想出另一个更通用的模式UMD （Universal Module Definition）。希望解决跨平台的解决方案。  
 UMD先判断是否支持Node.js的模块（exports）是否存在，存在则使用Node.js模块模式。在判断是否支持AMD（define是否存在），存在则使用AMD方式加载模块。  
 
+## ctrl + cv时自定义文本
+```
+//ctrl + c触发
+document.addEventListener('copy', function (oevent) {
+    //必须写，不然无法写入自定义文本
+    oevent.preventDefault();
+    var content = window.getSelection().toString();
+    content += " powered by chenshuaiyu";
+    oevent.clipboardData.setData("text",content);
+})
+
+//ctrl + v触发
+document.addEventListener('paste', function (oevent) {
+    console.log(oevent.clipboardData.getData("text"));
+})
+
+document.addEventListener('keyup', function(e) {
+    if(e.ctrlKey && e.keyCode == "67") {
+        var content = window.getSelection().toString();                    
+        alert(content)
+    }
+})
+```

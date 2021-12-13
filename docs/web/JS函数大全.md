@@ -8,6 +8,65 @@
 + prototype 是函数所独有的，在定义构造函数时自动创建，它总是被 __proto__ 所指。
 + 所有对象都有__proto__属性，函数这个特殊对象除了具有__proto__属性，还有特有的原型属性prototype。prototype对象默认有两个属性，constructor属性和__proto__属性。prototype属性可以给函数和对象添加可共享（继承）的方法、属性，而__proto__是查找某函数或对象的原型链方式。constructor，这个属性包含了一个指针，指回原构造函数。
 
+## 其它
++ **for in**循环的是对象的key值，**for of**循环的是对象的value值，数组为特殊对象，key值就是索引值。 
++ 可以通过`arguments`查看函数参数。
++ 箭头函数捕捉闭包上下文的this值。
++ **delete**操作符，删除一个对象的属性或者一个数组中某一个键值。删除数组的某一项只是使其变为undefined，长度不会变化。
++ **in**操作符，可以判断对象的key值是否在对象中，或者数组索引值是否在数组中。
++ **instanceof**操作符，如果所判别的对象确实是所指定的类型，则返回true。Date，String本质上是函数，Math是对象。
++ 浏览器中输入`Date.prototype`可以输出所有可用属性和方法。
++ <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank">正则表达式参考文档</a>
++ **forEach**只是遍历数组，**map**则可以遍历数组，并进行一些操作后返回一个新数组。  
+  **filter**是筛选符合条件的元素，**every**是所有项符合条件则为true，**some**是有一项符合条件则为true。  
+  **reduce**是传入的两个相邻索引作为参数，**reduceRight**是从后往前遍历。
++ **Map**有着类似object的键值对。<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map"         target="_blank">API文档</a>  
+  **Set**对象允许你存储任何类型的唯一值，无论是原始值或者是对象引用。结构类似Array。<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set" target="_blank">API文档</a>  
++ 所有的 JavaScript 对象至少继承于一个对象。被继承的对象被称作原型，并且继承的属性可通过构造函数的**prototype**对象找到。
++ 如果希望对象的属性具有默认值，并且希望在运行时修改这些默认值，应该在对象的原型中设置这些属性，而不是在构造器函数中。
++ <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Equality_comparisons_and_sameness" target="_blank">JavaScript 中的相等性判断</a>
+
+```js
+function Engineer (name, projs, mach) {
+  this.base = WorkerBee;
+  this.base(name, "engineering", projs);
+  this.machine = mach || "";
+}
+
+var jane = new Engineer("Doe, Jane", ["navigator", "javascript"], "belau");
+```
+1. new 操作符创建了一个新的对象，并将其 __proto__ 属性设置为 Engineer.prototype。
+2. new 操作符将该新对象作为 this 的值传递给 Engineer 构造函数。
+3. 构造函数为该新对象创建了一个名为 base 的新属性，并指向 WorkerBee 的构造函数。这使得 WorkerBee 构造函数成为 Engineer 对象的一个方法。base属性的名称并没有什么特殊性，我们可以使用任何其他合法的名称来代替；base 仅仅是为了贴近它的用意。
+4. 构造函数调用 base 方法，将传递给该构造函数的参数中的两个，作为参数传递给 base 方法，同时还传递一个字符串参数  "engineering"。显式地在构造函数中使用 "engineering" 表明所有 Engineer 对象继承的 dept 属性具有相同的值，且该值重载了继承自 Employee 的值。
+
+5. 因为 base 是 Engineer 的一个方法，在调用 base 时，JavaScript 将在步骤 1 中创建的对象绑定给 this 关键字。这样，WorkerBee 函数接着将 "Doe, Jane" 和 "engineering" 参数传递给 Employee 构造函数。当从 Employee 构造函数返回时，WorkerBee 函数用剩下的参数设置 projects 属性。
+6. 当从 base 方法返回后，Engineer 构造函数将对象的 machine 属性初始化为 "belau"。
+7. 当从构造函数返回时，JavaScript 将新对象赋值给 jane 变量。  
+
+
+
+```
+var parts = ['shoulder', 'knees'];
+var lyrics = ['head', ...parts, 'and', 'toes'];
+
+function f(x, y, z) { }
+var args = [0, 1, 2];
+f(...args);
+
+===============================
+
+var o = new Foo();
+
+JavaScript 实际上执行的是：
+var o = new Object();
+o.__proto__ = Foo.prototype;
+Foo.call(o);
+
+o.someProp;
+它检查 o 是否具有 someProp 属性。如果没有，它会查找 Object.getPrototypeOf(o).someProp，如果仍旧没有，它会继续查找 Object.getPrototypeOf(Object.getPrototypeOf(o)).someProp。
+```
+
 ## 原生js函数和jquery函数  
 ```js
 array创建数组
