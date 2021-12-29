@@ -1,4 +1,6 @@
 # CSS
++ background image url需要进行URLEncodeComponent，不然有特殊字符不显示图片
+
 ## 盒子模型
 ![blockchain](./image/css/盒子模型.png "盒子模型")   
 
