@@ -45,7 +45,7 @@ const interviewArray = [
 
 module.exports = {
 	title: "chen's blog",
-	base: "/",
+	base: "/chendreamer.blog/",
 	port: "9888",
 	description: 'chendreamer的博客',
 	head: [
