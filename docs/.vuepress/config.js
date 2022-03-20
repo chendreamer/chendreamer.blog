@@ -82,6 +82,10 @@ module.exports = {
 						link: '/interview/',
 						children: interviewArray
 					},
+                    {
+						text: '记事本',
+						link: 'http://chendreamer.github.io/notepad-for-work/'
+					},
 					{
 						text: 'GitHub',
 						link: 'https://github.com/chendreamer'
