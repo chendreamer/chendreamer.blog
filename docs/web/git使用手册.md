@@ -16,9 +16,9 @@
 + 从stage撤回`git reset HEAD 或者 git reset a.txt`
 + 提交的备注信息`git commit -m '这里是备注信息'`
 + 回到分支更改前的节点`git checkout .`
-+ 查看日志`git log`
++ 查看日志`git log`，查看log日志时在命令行输入一个单词会把log保存成文件
 + 查看每次提交的文件列表`git log --stat`
-+ 查看某次提交的修改内容`git show hash`
++ 查看某次提交的修改内容`git show commitID`
 + git pull之后查看代码更新内容 `git diff HEAD^`
 + 显示工作目录与git仓库之间的差异`git diff HEAD`
 + 移动提交记录`git rebase 目标节点或分支`
