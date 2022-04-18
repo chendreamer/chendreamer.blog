@@ -83,8 +83,20 @@ module.exports = {
                         children: interviewArray
                     },
                     {
-                        text: '记事本',
-                        link: 'http://chendreamer.github.io/notepad-for-work/'
+                        text: '核心项目',
+                        children: [{
+                                text: '记事本',
+                                link: 'https://chendreamer.github.io/notepad-for-work/',
+                            },
+                            {
+                                text: 'ui-design',
+                                link: 'https://chendreamer.github.io/ui-design/',
+                            },
+                            {
+                                text: '地图app',
+                                link: 'https://chendreamer.github.io/subwaymap/',
+                            },
+                        ],
                     },
                     {
                         text: 'GitHub',
