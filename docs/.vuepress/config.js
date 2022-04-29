@@ -7,6 +7,7 @@ const webArray = [
     '/web/HTML.md',
     '/web/CSS.md',
     '/web/vue.md',
+    '/web/react.md',
     '/web/ES6.md',
     '/web/webpack.md',
     '/web/typescript.md',
