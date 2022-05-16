@@ -1,5 +1,13 @@
 # node
 入门参考文档：点击<a href="https://www.nodebeginner.org/index-zh-cn.html" target="_blank">这里</a>
+### 动态刷新node服务器的插件
+用法：`nodemon practice.js`
+
+
+## koa的洋葱模型
+![yunsuanfu](./image/node/koa洋葱模型.jpg)  
+![yunsuanfu](./image/node/koa洋葱模型调用流程.jpg)  
+Koa 的洋葱模型指的是以 next() 函数为分割点，先由外到内执行 Request 的逻辑，再由内到外执行 Response 的逻辑。通过洋葱模型，将多个中间件之间通信等变得更加可行和简单。其实现的原理并不是很复杂，主要是 compose 方法。
 
 ## 函数列表
 + process是node的全局变量。
