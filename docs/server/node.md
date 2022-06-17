@@ -3,6 +3,12 @@
 ### 动态刷新node服务器的插件
 用法：`nodemon practice.js`
 
+## Restful
+接口访问的地址路径相同，只是method不同。
++ `GET`获取列表
++ `POST`提交表单
++ `PUT`修改表单
++ `DELETE`删除记录
 
 ## koa的洋葱模型
 ![yunsuanfu](./image/node/koa洋葱模型.jpg)  

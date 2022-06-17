@@ -18,6 +18,7 @@ const menu = {
         '/web/git使用手册.md',
         '/web/JS思维导图.md',
         '/web/JS函数大全.md',
+        '/web/浏览器调试.md',
         '/web/算法.md',
         '/web/前端性能优化.md',
         '/web/iconfont.md',
@@ -27,6 +28,7 @@ const menu = {
     server :  [ //后端目录结构
         '/server/首页.md',
         '/server/知识点.md',
+        '/server/npm&yarn.md',
         '/server/node.md',
         '/server/sql语句.md',
         '/server/mongoDB.md',
@@ -39,6 +41,7 @@ const menu = {
         '/interview/Vue源码学习笔记.md',
         '/interview/vue双向绑定的简单实现.md',
         '/interview/js类.md',
+        '/interview/js奇技淫巧.md',
         '/interview/面试点总结-1.md',
         '/interview/面试点总结-2.md'
     ]
