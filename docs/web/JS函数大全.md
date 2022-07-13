@@ -157,7 +157,7 @@ moveBy()把窗口的坐标移动指定的像素
 moveTo()把窗口移动到一个指定的坐标
  
 JAVASCRIPT Other 函数
-encodeURI()字符串进行URI编码
+encodeURI()字符串进行URI编码（不会编译有些httpURL中的预留符号）
 decodeURI()解码编码过的 URI 字符串
 write()在文档中输出字符串
 top取得最顶层框架对象
@@ -171,7 +171,7 @@ unescape()对由 escape() 编码的字符串进行解码。
 title返回当前文档的标题
 domain返回当前文档的服务器域名
 typeof检测给定变量的数据类型
-decodeURIComponent()URI解码
+decodeURIComponent()URI解码（会编译有些httpURL中的预留符号）
 encodeURIComponent()进行URI编码
 isFinite()检查是否无穷大
 arguments传递给函数的参数列表

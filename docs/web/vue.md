@@ -25,6 +25,23 @@ yarn add sass
 + Mutation:更改 Vuex 的 store 中的状态的唯一方法是提交 mutation。 mutation 必须是同步函数。
 + Action:Action 类似于 mutation，不同在于：Action 提交的是 mutation，而不是直接变更状态。Action 可以包含任意异步操作。
 + Module:每个模块拥有自己的 state、mutation、action、getter、甚至是嵌套子模块。
+```
+//简单实现
+var store = {
+                debug: true,
+                state: {
+                    message: 'Hello!'
+                },
+                setMessageAction(newValue) {
+                    if (this.debug) console.log('setMessageAction triggered with', newValue)
+                    this.state.message = newValue
+                },
+                clearMessageAction() {
+                    if (this.debug) console.log('clearMessageAction triggered')
+                    this.state.message = ''
+                }
+            }
+```
 
 ## vue优化速度
 + 开启gzip。  
@@ -74,3 +91,34 @@ yarn add sass
 //若想任意类型 T 可以为undefined,不可为null，只需类似如下写成 ?: T 的格式即可。
   var foo?: string = undefined
    ```
+
+## 组合式 API
+<a href="https://v3.cn.vuejs.org/guide/composition-api-setup.html#%E5%8F%82%E6%95%B0" target="_blank">官网文档</a>  
+### ref
+ref 为我们的值创建了一个响应式引用。ref 接收参数并将其包裹在一个带有 value property 的对象中返回，然后可以使用该 property 访问或更改响应式变量的值。
+### setup
+setup 选项是一个接收 props 和 context 的函数
+### setup 内注册生命周期钩子
+组合式 API 上的生命周期钩子与选项式 API 的名称相同，但前缀为 on：即 mounted 看起来会像 onMounted。
+### watch
+```js
+import { ref, watch } from 'vue'
+
+const counter = ref(0)
+watch(counter, (newValue, oldValue) => {
+  console.log('The new counter value is: ' + counter.value)
+})
+```
+### computed
+```js
+import { ref, computed } from 'vue'
+
+const counter = ref(0)
+const twiceTheCounter = computed(() => counter.value * 2)
+
+counter.value++
+console.log(counter.value) // 1
+console.log(twiceTheCounter.value) // 2
+```
+
+
