@@ -17,11 +17,15 @@
 + **instanceof**操作符，如果所判别的对象确实是所指定的类型，则返回true。Date，String本质上是函数，Math是对象。
 + 浏览器中输入`Date.prototype`可以输出所有可用属性和方法。
 + <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank">正则表达式参考文档</a>
+
 + **forEach**只是遍历数组，**map**则可以遍历数组，并进行一些操作后返回一个新数组。  
   **filter**是筛选符合条件的元素，**every**是所有项符合条件则为true，**some**是有一项符合条件则为true。  
-  **reduce**是传入的两个相邻索引作为参数，**reduceRight**是从后往前遍历。
-+ **Map**有着类似object的键值对。<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Map"         target="_blank">API文档</a>  
-  **Set**对象允许你存储任何类型的唯一值，无论是原始值或者是对象引用。结构类似Array。<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Set" target="_blank">API文档</a>  
+  **reduce**是传入的两个相邻索引作为参数，**reduceRight**是从后往前遍历。<a target="_blank"
+  href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Indexed_collections">MDN参考</a>  
+
++ **Map**有着类似object的键值对。  <a target="_blank" 
+  href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Keyed_collections">MDN参考</a>  
+  **Set**对象允许你存储任何类型的唯一值，无论是原始值或者是对象引用。结构类似Array。
 + 所有的 JavaScript 对象至少继承于一个对象。被继承的对象被称作原型，并且继承的属性可通过构造函数的**prototype**对象找到。
 + 如果希望对象的属性具有默认值，并且希望在运行时修改这些默认值，应该在对象的原型中设置这些属性，而不是在构造器函数中。
 + <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Equality_comparisons_and_sameness" target="_blank">JavaScript 中的相等性判断</a>

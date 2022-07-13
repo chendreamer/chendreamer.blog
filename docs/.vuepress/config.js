@@ -1,49 +1,51 @@
 const path = require("path");
 
 //前端目录结构
-const webArray = [
-    '/web/首页.md',
-    '/web/知识点.md',
-    '/web/HTML.md',
-    '/web/CSS.md',
-    '/web/vue.md',
-    '/web/react.md',
-    '/web/ES6.md',
-    '/web/webpack.md',
-    '/web/typescript.md',
-    '/web/Mockjs.md',
-    '/web/flex&grid.md',
-    '/web/markdown语法.md',
-    '/web/git使用手册.md',
-    '/web/JS思维导图.md',
-    '/web/JS函数大全.md',
-    '/web/算法.md',
-    '/web/前端性能优化.md',
-    '/web/iconfont.md',
-    '/web/WEB安全.md',
-    '/web/canvas&svg.md',
-]
-
-//后端目录结构
-const serverArray = [
-    '/server/首页.md',
-    '/server/知识点.md',
-    '/server/node.md',
-    '/server/sql语句.md',
-    '/server/mongoDB.md'
-]
-
-//面试目录结构
-const interviewArray = [
-    '/interview/优秀博主.md',
-    '/interview/精品文章.md',
-    '/interview/vue思维导图.md',
-    '/interview/Vue源码学习笔记.md',
-    '/interview/vue双向绑定的简单实现.md',
-    '/interview/js类.md',
-    '/interview/面试点总结-1.md',
-    '/interview/面试点总结-2.md'
-]
+const menu = {
+    web : [ //前端目录结构
+        '/web/首页.md',
+        '/web/知识点.md',
+        '/web/HTML.md',
+        '/web/CSS.md',
+        '/web/vue.md',
+        '/web/react.md',
+        '/web/ES6.md',
+        '/web/webpack.md',
+        '/web/typescript.md',
+        '/web/Mockjs.md',
+        '/web/flex&grid.md',
+        '/web/markdown语法.md',
+        '/web/git使用手册.md',
+        '/web/JS思维导图.md',
+        '/web/JS函数大全.md',
+        '/web/浏览器调试.md',
+        '/web/算法.md',
+        '/web/前端性能优化.md',
+        '/web/iconfont.md',
+        '/web/WEB安全.md',
+        '/web/canvas&svg.md',
+    ],
+    server :  [ //后端目录结构
+        '/server/首页.md',
+        '/server/知识点.md',
+        '/server/npm&yarn.md',
+        '/server/node.md',
+        '/server/sql语句.md',
+        '/server/mongoDB.md',
+        '/server/Create React App.md',
+    ],
+    interview : [ //面试目录结构
+        '/interview/优秀博主.md',
+        '/interview/精品文章.md',
+        '/interview/vue思维导图.md',
+        '/interview/Vue源码学习笔记.md',
+        '/interview/vue双向绑定的简单实现.md',
+        '/interview/js类.md',
+        '/interview/js奇技淫巧.md',
+        '/interview/面试点总结-1.md',
+        '/interview/面试点总结-2.md'
+    ]
+}
 
 module.exports = {
     title: "chen's blog",
@@ -71,17 +73,17 @@ module.exports = {
                 navbar: [{
                         text: '前端',
                         link: '/web/',
-                        children: webArray
+                        children: menu.web
                     },
                     {
                         text: '后端',
                         link: '/server/',
-                        children: serverArray
+                        children: menu.server
                     },
                     {
                         text: '面试题',
                         link: '/interview/',
-                        children: interviewArray
+                        children: menu.interview
                     },
                     {
                         text: '核心项目',
@@ -107,15 +109,15 @@ module.exports = {
                 sidebar: {
                     '/web/': [{
                         text: '前端',
-                        children: webArray
+                        children: menu.web
                     }],
                     '/server/': [{
                         text: '后端',
-                        children: serverArray
+                        children: menu.server
                     }],
                     '/interview/': [{
                         text: '面试题',
-                        children: interviewArray
+                        children: menu.interview
                     }]
                 }
             },
