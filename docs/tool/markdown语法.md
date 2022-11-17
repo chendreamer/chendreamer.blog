@@ -29,8 +29,8 @@
 ## 图片
 支持网络地址，相对地址，base64。  
   
-![blockchain](./image/1.png "qukuailian")
-`![blockchain](./image/1.png "qukuailian")`  
+![blockchain](./image/markdown/1.png "qukuailian")
+`![blockchain](./image/markdown/1.png "qukuailian")`  
 
 ## 字体
 + 加粗  

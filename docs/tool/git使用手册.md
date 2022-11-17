@@ -1,5 +1,22 @@
 # git使用手册
-![git](./image/git.png "git")
+![git](./image/git/git.png "git")
+
+## git初始化
+```
+//create a new repository on the command line
+echo "# ttt" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M 'main'
+git remote add origin https://github.com/chendreamer/test.git
+git push -u origin 'main'
+
+//push an existing repository from the command line
+git remote add origin https://github.com/chendreamer/test.git
+git branch -M 'main'
+git push -u origin 'main'
+```
 
 ## 分支
 + 新建分支`git branch 分支名`
@@ -11,6 +28,8 @@
 + 切换分支`git checkout 分支名`
 
 ## 常用
++ 查看参考文档`git help git`
++ 查看单命令参考文档`git 命令 --help`
 + 查看状态`git status`
 + 提交到stage`git add . 或者 git add a.txt 或者 git rm a.txt`
 + 从stage撤回`git reset HEAD 或者 git reset a.txt`
