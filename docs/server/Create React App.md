@@ -40,7 +40,7 @@ location ~ /api {
 
 ## 验证
 页面放到nginx下的html下。直接访问即可。
-```conf
+```js
  server {
         listen       9999;
         server_name  localhost;

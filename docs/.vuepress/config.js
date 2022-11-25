@@ -39,13 +39,15 @@ const MENU = {
         '/interview/vue双向绑定的简单实现.md',
     ],
     accumulation: [ //积累
+        '/accumulation/github优秀库.md',
         '/accumulation/cpu.md',
         '/accumulation/js奇技淫巧.md',
+        '/accumulation/js新特性.md',
         '/accumulation/js类.md',
     ],
     tool: [//工具
-        '/tool/git使用手册.md',
         '/tool/markdown语法.md',
+        '/tool/git使用手册.md',
         '/tool/webpack.md',
         '/tool/浏览器调试.md',
         '/tool/Mockjs.md',
@@ -55,7 +57,7 @@ const MENU = {
 module.exports = {
     title: "chen's blog",
     base: "/chendreamer.blog/",
-    port: "9888",
+    port: "9999",
     description: 'chendreamer的博客',
     head: [
         ['link', { rel: 'icon', href: 'image/logo.png' }]
@@ -115,7 +117,7 @@ module.exports = {
                     }],
                 },
                 {
-                    text: 'GitHub',
+                    text: '我的GitHub',
                     link: 'https://github.com/chendreamer'
                 }
                 ],
