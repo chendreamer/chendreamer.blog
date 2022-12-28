@@ -30,7 +30,6 @@ const MENU = {
         '/server/Create React App.md',
     ],
     interview: [ //面试目录结构
-        '/interview/优秀博主.md',
         '/interview/精品文章.md',
         '/interview/面试点总结-1.md',
         '/interview/面试点总结-2.md',
@@ -39,8 +38,10 @@ const MENU = {
         '/interview/vue双向绑定的简单实现.md',
     ],
     accumulation: [ //积累
+        '/accumulation/优秀主站.md',
+        '/accumulation/优秀博主.md',
+        '/accumulation/优秀案例.md',
         '/accumulation/github优秀库.md',
-        '/accumulation/优秀主页.md',
         '/accumulation/cpu.md',
         '/accumulation/js奇技淫巧.md',
         '/accumulation/js新特性.md',
