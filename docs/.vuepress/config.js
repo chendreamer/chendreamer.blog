@@ -44,6 +44,7 @@ const MENU = {
         '/accumulation/js奇技淫巧.md',
         '/accumulation/js新特性.md',
         '/accumulation/js类.md',
+        '/accumulation/正则表达式.md',
     ],
     tool: [//工具
         '/tool/markdown语法.md',
