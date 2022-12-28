@@ -26,3 +26,17 @@ background-position: -100% 0;
 }
 }
 ```
+
+### 网页灰度设置
+<a href="https://blog.csdn.net/qq_41356250/article/details/118310462" target="_blank">优秀示例 filter用法</a>  
+``` css
+html{
+     -webkit-filter: grayscale(100%);            /* CSS3 filter方式，webkit内核方式，firefox外的绝大部分的现代浏览器*/  
+       -moz-filter: grayscale(100%);            /* 目前没有实现 */  
+        -ms-filter: grayscale(100%);  
+         -o-filter: grayscale(100%);  
+            filter: grayscale(100%);            /* CSS3 filter方式，标准写法*/  
+            filter: url(filters.svg#grayscale); /* Firefox 4+ */  
+            filter: gray;                       /* IE 6-9 */  
+}
+```

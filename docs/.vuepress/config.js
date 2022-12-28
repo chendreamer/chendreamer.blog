@@ -40,6 +40,7 @@ const MENU = {
     ],
     accumulation: [ //积累
         '/accumulation/github优秀库.md',
+        '/accumulation/优秀主页.md',
         '/accumulation/cpu.md',
         '/accumulation/js奇技淫巧.md',
         '/accumulation/js新特性.md',
